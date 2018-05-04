@@ -1,0 +1,50 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.94",
+	"appid": "wx250cce5feff955f6",
+	"projectname": "orangeCan",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "设置启动页面",
+					"pathName": "pages/post/post-detail/post-detail",
+					"query": "id=1"
+				},
+				{
+					"id": -1,
+					"name": "设置启动页面",
+					"pathName": "pages/post/post-detail/post-detail",
+					"query": "id=1"
+				}
+			]
+		}
+	}
+}
