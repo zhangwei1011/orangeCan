@@ -8,7 +8,7 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.9.94",
+	"libVersion": "1.7.4",
 	"appid": "wx250cce5feff955f6",
 	"projectname": "orangeCan",
 	"isGameTourist": false,
@@ -30,10 +30,10 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 0,
 			"list": [
 				{
-					"id": -1,
+					"id": 0,
 					"name": "设置启动页面",
 					"pathName": "pages/post/post-detail/post-detail",
 					"query": "id=1"

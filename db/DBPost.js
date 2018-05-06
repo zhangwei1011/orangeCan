@@ -41,6 +41,7 @@ class DBPost {
     this.storageKeyName = 'postList'; // 所有的文章本地缓存存储键
     this.postId = postId;
   }
+
   getAllPostData() {
     var res = wx.getStorageSync(this.storageKeyName);
     if (!res) {
@@ -67,6 +68,54 @@ class DBPost {
         }
       }
     }
+  }
+  //更新本地的点赞、评论信息、收藏、阅读量
+  updatePostData(category) {
+    var that = this;
+    var itemData = that.getPostItemById(),
+        postData = itemData.data,
+        allPostData = that.getAllPostData();
+    switch(category) {
+      case 'collect':
+          //处理收藏
+          if(!postData.collectionStatus) {
+            //如果当前状态是未收藏
+            postData.collectionNum++;
+            postData.collectionStatus = true;
+          } else {
+            postData.collectionNum--;
+            postData.collectionStatus = false;
+          }
+          break;
+      case 'up':
+        //文章点赞功能
+        if (!postData.upStatus) {
+          //如果当前状态是未收藏
+          postData.upNum++;
+          postData.upStatus = true;
+        } else {
+          postData.upNum--;
+          postData.upStatus = false;
+        }
+        break;
+      default:
+          break;
+    }
+    //更新缓存数据库
+    allPostData[itemData.index] = postData;
+    that.execSetStorageSync(allPostData);
+    return postData;
+  }
+
+  //收藏文章
+  collect() {
+    return this.updatePostData('collect');
+  }
+
+  //点赞或取消点赞
+  up() {
+    var data = this.updatePostData('up');
+    return data;
   }
 }
 

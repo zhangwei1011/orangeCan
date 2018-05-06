@@ -9,7 +9,7 @@
 } 
 
 .title {
-  font-size: 20px;
+  font-size: 30rpx;
   margin: 30rpx;
   letter-spacing: 2px;
   color: #4b446c;
@@ -45,6 +45,7 @@
 .date {
   color: #919191;
   margin-right: 38rpx;
+  font-size: 30rpx;
 }
 
 .detail {
@@ -52,5 +53,29 @@
   margin: 40rpx 22rpx 0;
   line-height: 44rpx;
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 28rpx;
+}
+
+.tool {
+  height: 64rpx;
+  text-align: center;
+  line-height: 64rpx;
+  margin: 20rpx 28rpx 20rpx 0;
+}
+.tool-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30rpx;
+}
+.tool-item image {
+  height: 30rpx;
+  width: 30rpx;
+  vertical-align: -3px;
+  margin-right: 10rpx;
+}
+.tool-item text{
+ font-size: 24rpx;
+}
+.comment image {
+  transform: scale(0.85);
 }

@@ -1,15 +1,16 @@
 {
   "pages":[
     "pages/post/post",
-    "pages/welcome/welcome",
     "pages/post/post-detail/post-detail",
+    "pages/post/post-content/post-content",
+    "pages/welcome/welcome",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "ECC0A8",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "一个雪糕",
     "navigationBarTextStyle":"black"
   }
 }
